@@ -1,0 +1,23 @@
+import React from 'react'
+
+const Meme = () => {
+    return (
+        <main>
+            <form action="" className='form'>
+                <input 
+                    type="text" 
+                    className='form--input'
+                    placeholder='Top text'
+                />
+                <input 
+                    type="text" 
+                    className='form--input'
+                    placeholder='Bottom text'
+                />
+                <button className='form--button'>Get a new meme image</button>
+            </form>
+        </main>
+    )
+}
+
+export default Meme;

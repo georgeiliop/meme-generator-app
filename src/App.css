@@ -2,6 +2,10 @@ body {
   font-family: 'Inter', sans-serif;
   letter-spacing: -1px;
 }
+
+main {
+  padding: 36px;
+}
 .headerContainer {
   display: flex;
   align-items: center;
@@ -26,4 +30,26 @@ body {
   width: 32px;
   height: 26px;
   margin-left: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: 'Inter', sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form--input {
+  font-family: 'Inter', sans-serif;
+  border-radius: 5px;
+  border: 1PX solid #d5d4d8;
 }
