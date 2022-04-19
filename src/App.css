@@ -53,3 +53,7 @@ main {
   border-radius: 5px;
   border: 1PX solid #d5d4d8;
 }
+
+.meme--image {
+  max-width: 100%;
+}
