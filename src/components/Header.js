@@ -6,7 +6,7 @@ const Header = () => {
         <header className="headerContainer">
             <img src={trollface} alt="trollface" id="trollface"/>
             <h1>Meme Generator</h1>
-            <p>React - Project </p>
+            <p>To take you back to 2013</p>
         </header>
     )
 }
