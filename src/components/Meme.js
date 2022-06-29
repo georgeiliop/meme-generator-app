@@ -1,4 +1,5 @@
 import React from 'react'
+import { useCallback } from 'react'
   
 
 const Meme = () => {
@@ -16,9 +17,9 @@ const Meme = () => {
         .then( res => res.json()
         .then(data => setAllMemes(data.data.memes))
         )
-    })
+    }, [])
 
-    const getMemeImage= () => {
+    const getMemeImage= useCallback (() => {
         const randomNumber=Math.floor(Math.random() * allMemes.length)
         const url=allMemes[randomNumber].url 
         setMeme(prevMeme => ({
@@ -26,7 +27,8 @@ const Meme = () => {
             randomImage: url
         }))
        
-    }
+    }, [meme.randomImage])
+    React.useEffect( () =>console.log("im rerendering"), [getMemeImage])
 
     const handleChange = (event) => {
         const {name,value} = event.target
